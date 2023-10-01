@@ -64,5 +64,33 @@ button0 = Button(frame, text=0, height=4, width=9, font=35,
                  command=lambda: button_press(0))
 button0.grid(row=3, column=1)
 
+plus = Button(frame, text='+', height=4, width=9, font=35,
+                 command=lambda: button_press('+'))
+plus.grid(row=3, column=0)
+
+minus = Button(frame, text='-', height=4, width=9, font=35,
+                 command=lambda: button_press('-'))
+minus.grid(row=3, column=2)
+
+multiply = Button(frame, text='x', height=4, width=9, font=35,
+                 command=lambda: button_press('*'))
+multiply.grid(row=2, column=3)
+
+divide = Button(frame, text='÷', height=4, width=9, font=35,
+                 command=lambda: button_press('/'))
+divide.grid(row=1, column=3)
+
+equal = Button(frame, text='=', height=4, width=9, font=35,
+                 command=equals)
+equal.grid(row=3, column=3)
+
+decimal = Button(frame, text='.', height=4, width=9, font=35,
+                 command=lambda: button_press('.'))
+decimal.grid(row=4, column=1)
+
+clear = Button(frame, text='CE', height=4, width=9, font=35,
+                 command=clear)
+clear.grid(row=0, column=3)
+
 
 window.mainloop()
