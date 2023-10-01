@@ -1,15 +1,23 @@
-import tkinter as tk
+from tkinter import *
 
-root = tk.Tk()
+def button_press():
+    pass
+
+def equals():
+    pass
+
+def clear():
+    pass
+
+root = Tk()
 root.geometry("300x400")
 root.title("Calculator")
 
+button = Button(root, height=3,)
 
-label = tk.Label(root,text="Testing", font=('ComicSans', 18))
-label.pack(padx=20, pady=20)
+equationtext = ""
+equation_label = StringVar()
 
-button = tk.Button(root, height=3,)
-
-button.grid
+label = Label(root, textvariable=equation_label, font=('Comicsans'))
 
 root.mainloop()
